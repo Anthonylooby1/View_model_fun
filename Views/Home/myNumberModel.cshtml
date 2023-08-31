@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @model List<int>
+    <a href="/">Home</a>
+    <a href="numbers">Numbers</a>
+    <a href="/user">User</a>
+    <a href="users">Users</a>
+    <h1>Numbers</h1>
+    @foreach (int i in Model)
+    {
+        <p>@i</p>
+    }
+</body>
+</html>
